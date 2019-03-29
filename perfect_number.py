@@ -1,20 +1,20 @@
-print("Funcion numeros perfectos")
+print("Funcion numeros Casi perfectos")
 
 a=int(input("Digita un numero: "))
 
-def perfect_number(a):
+def casi_perfecto(a):
 	suma=0
 	
 	for i in range(1,a):
 		if a%i==0:
 			suma+=i
-	if suma==a:
-		print("El numero es un numero perfecto")
+	if suma<=(a-3):
+		print("El numero no es un numero casi perfecto")
 
 	else:
-		print("El numero no es un numero perfecto")
+		print("El numero es un numero casi perfecto")
 
-perfect_number(a)
+casi_perfecto(a)
 
 print("Final del programa")
 
