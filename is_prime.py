@@ -1,9 +1,16 @@
 print("Funcion primo")
+
+cont=0
+
 while True:
 	n=int(input("Digita un numero: "))
 	if n<=0:
 		print("Numeros no contemplados")
 		break
+
+	else:
+		cont+=1
+		print("Primos contados= " + str(cont))
 
 	def is_prime():
 		try:
@@ -17,7 +24,6 @@ while True:
 				print("1")
 		except:
 			print("-1")
-
 	is_prime()
 
-print("Final del programa")
+print("Final del programa")			
