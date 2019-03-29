@@ -1,15 +1,19 @@
 print("Algoritmo potencia")
 
-a=int(input("Digita un numero: "))
-b=int(input("Digita otro numero: "))
-
-def potencia(a,b):
-  pro=a
-  for i in range(1,b):
-    pro=pro*a
+while True:
+  a=int(input("Digita un numero: "))
+  if a==0:
+    print("El valor 0 no esta contemplado")
+    break
+  
+  b=int(input("Digita otro numero: "))
+  def potencia(a,b):
+      pro=a
+      for i in range(1,b):
+        pro=pro*a
+        
+      print(pro)
     
-  print(pro)
-
-potencia(a,b)    
-    
+  potencia(a,b)
+  
 print("Final del programa")
